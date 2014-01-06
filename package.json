@@ -1,0 +1,23 @@
+{
+  "author": "Aaron <aaroncrespo@gmail.com>",
+  "name": "node-web-scraper",
+  "description": "Web Scraper Written with streams",
+  "version": "0.0.1",
+  "readme": "README.md",
+  "repository": {
+    "url": ""
+  },
+  "dependencies": {
+    "request": "~2.29.0",
+    "event-stream": "~3.0.20",
+    "geocoder": "~0.1.0",
+    "cheerio": "~0.12.4",
+    "optimist": "~0.6.0",
+    "csv-stream": "~0.1.3"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">=`0.8.0"
+  }
+}
