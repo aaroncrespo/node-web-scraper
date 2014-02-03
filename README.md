@@ -1,6 +1,6 @@
-### Web Scraper built with stream
+### A Web Scraper built with streams
 
-I found myself using this as a jumping off point to write a couple scrappers for some projects, so why not share it.
+I found myself using this as a jumping off point to write a couple scrappers for some projects, it's simple and easy to customize. 
 
 Put your extraction rules (EX: [cheerio](https://github.com/MatthewMueller/cheerio), or [xpath](https://github.com/goto100/xpath))
 in a rules.js file (see sample)
@@ -9,7 +9,13 @@ in a rules.js file (see sample)
 
 To Geocode results your scrapping rules should return objects with an address field, and pass true to the -g option
 
-input CSV should have a url column, any additional columns will be used as url parameters.
+`input.csv` should have a url column; any additional columns will be used as url parameters.
+
+```csv
+"url","q"
+"www.google.com/search","kittens"
+```
+produces: `https://www.google.com/search?q=kittens`
 
 outputs a file of JSON objects.
 
